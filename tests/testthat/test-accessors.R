@@ -11,6 +11,7 @@ test_that("metadata.csv covers every declared motif set", {
     md <- utils::read.csv(system.file("extdata", "metadata.csv", package = "methylTFRAnnotationHg38"))
     for (s in methylTFRAnnotationHg38:::.MOTIF_SETS) {
         expect_true(any(grepl(paste0("^", s, "_"), md$Title)),
-            info = s)
+            info = s
+        )
     }
 })
