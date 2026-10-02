@@ -1,3 +1,25 @@
+# methylTFRAnnotationHg38 0.99.11
+
+Changes in response to the second review:
+
+* Depends on R (>= 4.6.0).
+* Input checking: an invalid `methylTFRAnnotationHg38.datadir` option or
+  `METHYL_TFRANNOTATION_HG38_DIR` value (not a single string, or a directory
+  that does not exist) now gives an informative error. Tests
+  added.
+* Added `inst/extdata/README.md` describing `metadata.csv` and
+  each AnnotationHub resource.
+* The vignette's Installation section also installs methylTFR.
+
+# methylTFRAnnotationHg38 0.99.10
+
+* BiocCheck fixes: the data help pages (`?motif_gcfreq`,
+  `?tf_bindsites`, `?genomewide_GC`) have a `\value` section, and
+  their examples run (reading `metadata.csv`) instead of using
+  `\dontrun`.
+* Shortened vignette lines to at most 80 characters.
+* Added `CITATION.cff`.
+
 # methylTFRAnnotationHg38 0.99.9
 
 Changes in response to the Bioconductor review:
